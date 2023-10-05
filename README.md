@@ -1,1 +1,1 @@
-Coding Exam design documentation goes here.
+To get started, set MONGODB_URI in .env.local to a mongodb

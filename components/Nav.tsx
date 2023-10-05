@@ -29,7 +29,7 @@ export default function Magic() {
               Link
             </Nav.Link>
           </Nav>
-          <Form className="d-flex">
+          <Form className="d-flex ms-auto me-auto">
             <Form.Control
               type="search"
               placeholder="Search"
@@ -39,8 +39,10 @@ export default function Magic() {
             <Button variant="outline-success">Search</Button>
           </Form>
         </Navbar.Collapse>
-          <Button >
-            Magic 
+          <Button
+            className="me-auto"
+          >
+            magic
           </Button>
       </Container>
     </Navbar>
