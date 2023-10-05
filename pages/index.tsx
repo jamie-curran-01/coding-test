@@ -12,7 +12,7 @@ type Post = {
 }
 export async function getServerSideProps() {
   try {
-    let response = await fetch('http://localhost:3000/api/getPosts');
+    let response = await fetch('https://coding-test-bii8-git-main-founders-twilighttech.vercel.app/api/getPosts');
     let posts = await response.json();
     return {
       props: { posts: JSON.parse(JSON.stringify(posts)) },
@@ -30,7 +30,7 @@ export default function Posts(props: Props) {
   const handleDeletePost = async (postId: string) => {
     try {
       let response = await fetch(
-        "http://localhost:3000/api/deletePost?id=" + postId,
+        "https://coding-test-bii8-git-main-founders-twilighttech.vercel.app/api/deletePost?id=" + postId,
         {
           method: "POST",
           headers: {
